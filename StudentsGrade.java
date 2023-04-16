@@ -1,4 +1,3 @@
-package Learnings;
 import java.util.Scanner;
 public class StudentsGrade {
     public static void main (String args[]){
@@ -12,7 +11,7 @@ public class StudentsGrade {
             // if greater than 80 than B grade
             // if greater than 70 than C greade 
             // below that person eill need more practice
-            if(marks>100){
+            if(marks>100 || marks<0){
                 System.out.println("Please enter acceptable marks");
             } else if(marks>90){
                 System.out.println("Greade A");
@@ -25,7 +24,7 @@ public class StudentsGrade {
             }
             // exception handling if user enters any other value than integer marks
         } catch (Exception e) {
-            System.out.println("you might have entered wrong values");
+            System.out.println("you might have entered wrong values Please enter whole number less than 100 only");
         }
     }
 }
