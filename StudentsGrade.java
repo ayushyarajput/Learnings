@@ -1,7 +1,6 @@
 import java.util.Scanner;
 public class StudentsGrade {
     public static void main (String args[]){
-
         try (Scanner myObj = new Scanner(System.in)) {
             // taking input from user
             System.out.print("Enter Marks : ");
